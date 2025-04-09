@@ -81,6 +81,12 @@ export default function Home() {
         darkMode ? "dark bg-gray-900 text-white" : "bg-blue-50 text-black"
       }
     >
+      <div className="mb-6 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center text-sm text-white shadow-md">
+  📂 <strong>Please upload your exported WhatsApp chat (.txt file)</strong><br />
+  To use this tool, first export your chat from WhatsApp and upload the .txt file here.<br />
+  <span className="text-xs text-gray-300">Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file</span>
+</div>
+
       <div className="min-h-screen flex flex-col px-4 py-6 max-w-5xl mx-auto">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold">📱 WhatsApp Chat Viewer</h1>
