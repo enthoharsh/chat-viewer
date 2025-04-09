@@ -191,7 +191,7 @@ export default function Home() {
 
     <footer className="backdrop-blur-md bg-white/10 text-gray-300 text-sm py-4 w-full mt-2">
       <div className="max-w-4xl mx-auto px-4 text-center text-black">
-        Designed with ❤️ by{" "}
+        Tool with ❤️ by{" "}
         <a
           href="https://github.com/enthoharsh"
           target="_blank"
