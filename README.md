@@ -12,7 +12,6 @@ A beautiful, dark-themed viewer to parse and explore exported WhatsApp chats (.t
 - 🔍 Filter messages by individual sender  
 - 🕒 Displays timestamp and formatted chat content  
 - 📱 Mobile responsive design  
-- 📎 Displays media placeholder and download info for attachments  
 - ⚡ Fast parsing even for large chat files  
 
 ---
@@ -22,8 +21,6 @@ A beautiful, dark-themed viewer to parse and explore exported WhatsApp chats (.t
 - **Next.js 14 (App Router)**  
 - **React.js**  
 - **Tailwind CSS**  
-- **TypeScript**  
-- **React Icons**  
 
 ---
 
@@ -32,8 +29,8 @@ A beautiful, dark-themed viewer to parse and explore exported WhatsApp chats (.t
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/whatsapp-chat-viewer.git
-cd whatsapp-chat-viewer
+git clone https://github.com/enthoharsh/chat-viewer
+cd chat-viewer
 ```
 
 ### 2. Install dependencies
@@ -77,13 +74,6 @@ Supports WhatsApp exported `.txt` chat files:
 
 ---
 
-## 🌐 SEO & Favicon Ready
-
-- SEO meta tags with dynamic dark mode support  
-- Custom favicon and title setup  
-
----
-
 ## 🧑‍💻 Developed by
 
 **Harsh**  
@@ -95,4 +85,4 @@ Supports WhatsApp exported `.txt` chat files:
 
 ## 📝 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available !
