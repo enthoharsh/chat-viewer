@@ -45,6 +45,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "WhatsApp Chat Viewer",
+      "url": "https://chat-viewer-delta.vercel.app",
+      "description": "A modern dark-themed viewer for WhatsApp exported chats.",
+      "applicationCategory": "Utilities",
+      "creator": {
+        "@type": "Person",
+        "name": "Harsh"
+      }
+    })
+  }}
+/>
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
