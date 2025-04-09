@@ -18,11 +18,11 @@ export const metadata = {
   openGraph: {
     title: "WhatsApp Chat Viewer",
     description: "Parse, filter, and explore WhatsApp chats in a beautiful UI.",
-    url: "https://yourdomain.com",
+    url: "https://chat-viewer-delta.vercel.app",
     siteName: "WhatsApp Chat Viewer",
     images: [
       {
-        url: "https://yourdomain.com/preview.png",
+        url: "https://chat-viewer-delta.vercel.app/preview.png",
         width: 1200,
         height: 630,
         alt: "WhatsApp Chat Viewer UI",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "WhatsApp Chat Viewer",
     description: "Dark-themed WhatsApp chat viewer with sender-based filtering.",
-    images: ["https://yourdomain.com/preview.png"],
+    images: ["https://chat-viewer-delta.vercel.app/preview.png"],
   },
   icons: {
     icon: "/favicon.ico",
