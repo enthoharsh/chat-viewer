@@ -12,12 +12,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "WhatsApp Chat Viewer",
-  description: "View and search your WhatsApp chat exports with dark mode, filtering, and an iOS-like UI.",
-  keywords: ["WhatsApp Chat Viewer", "Chat Parser", "Export Chat", "WhatsApp History", "Dark UI", "Chat Filter"],
+  title: "WhatsApp Chat Viewer - Online .txt File Parser & Reader",
+  description: "Free online WhatsApp chat viewer to upload, view and search your exported .txt chats. Filter by sender, enjoy dark iOS-style UI, and explore messages easily.",
+  keywords: [
+    "WhatsApp Chat Viewer", 
+    "Chat Parser", 
+    "Export Chat Viewer", 
+    "WhatsApp txt reader", 
+    "View WhatsApp History", 
+    "Online WhatsApp Chat Reader", 
+    "WhatsApp Chat Analyzer", 
+    "Chat Filter", 
+    "Dark Mode WhatsApp Viewer"
+  ],
   openGraph: {
-    title: "WhatsApp Chat Viewer",
-    description: "Parse, filter, and explore WhatsApp chats in a beautiful UI.",
+    title: "WhatsApp Chat Viewer - Explore .txt WhatsApp Chats Online",
+    description: "Upload and view your exported WhatsApp chats in a beautiful, dark UI. Filter by sender, group by date, and enjoy a smooth experience.",
     url: "https://chat-viewer-delta.vercel.app",
     siteName: "WhatsApp Chat Viewer",
     images: [
@@ -25,15 +35,15 @@ export const metadata = {
         url: "https://chat-viewer-delta.vercel.app/preview.png",
         width: 1200,
         height: 630,
-        alt: "WhatsApp Chat Viewer UI",
+        alt: "WhatsApp Chat Viewer Dark Mode UI",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WhatsApp Chat Viewer",
-    description: "Dark-themed WhatsApp chat viewer with sender-based filtering.",
+    title: "WhatsApp Chat Viewer | Read .txt Chat Files Online",
+    description: "Dark-themed WhatsApp chat viewer to explore your exported messages with filters and modern UI.",
     images: ["https://chat-viewer-delta.vercel.app/preview.png"],
   },
   icons: {
