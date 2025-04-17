@@ -82,6 +82,7 @@ export default function Home() {
       }
     >
       <div className="mb-6 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center text-sm  shadow-md">
+      <h1>WhatsApp Chat Viewer - View, Filter & Analyze Your Chats Online</h1>
   📂 <strong>Please upload your exported WhatsApp chat (.txt file)</strong><br />
   To use this tool, first export your chat from WhatsApp and upload the .txt file here.<br />
   <span className="text-xs ">Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file</span>
@@ -89,7 +90,7 @@ export default function Home() {
 
       <div className="min-h-screen flex flex-col px-4 py-6 max-w-5xl mx-auto">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="text-3xl font-bold">📱 WhatsApp Chat Viewer</h1>
+          <h2 className="text-3xl font-bold">📱 WhatsApp Chat Viewer</h2>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="text-sm border px-3 py-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700"

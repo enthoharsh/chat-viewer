@@ -12,19 +12,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "WhatsApp Chat Viewer - Online .txt File Parser & Reader",
+  title: "WhatsApp Chat Viewer - Online Chat Parser & Reader",
   description: "Free online WhatsApp chat viewer to upload, view and search your exported .txt chats. Filter by sender, enjoy dark iOS-style UI, and explore messages easily.",
   keywords: [
-    "WhatsApp Chat Viewer", 
-    "Chat Parser", 
-    "Export Chat Viewer", 
-    "WhatsApp txt reader", 
-    "View WhatsApp History", 
-    "Online WhatsApp Chat Reader", 
-    "WhatsApp Chat Analyzer", 
-    "Chat Filter", 
-    "Dark Mode WhatsApp Viewer"
-  ],
+    "WhatsApp Chat Viewer",
+    "Online WhatsApp Chat Viewer",
+    "WhatsApp Chat Parser",
+    "Exported WhatsApp Chat Reader",
+    "WhatsApp txt File Viewer",
+    "View WhatsApp Chat History",
+    "Analyze WhatsApp Chats",
+    "WhatsApp Message Search Tool",
+    "Dark Mode Chat Viewer",
+    "Online Chat Parser",
+    "WhatsApp Chat Analyzer",
+    "WhatsApp Export File Reader",
+    "WhatsApp History Viewer Online",
+    "Read WhatsApp Chat Backup",
+    "Free WhatsApp Chat Viewer Tool",
+    "WhatsApp Chat Filter Tool",
+    "Open WhatsApp .txt File",
+    "Read WhatsApp Text File Online",
+    "WhatsApp Chat Viewer App",
+    "Best WhatsApp Chat Viewer"
+  ],  
   openGraph: {
     title: "WhatsApp Chat Viewer - Explore .txt WhatsApp Chats Online",
     description: "Upload and view your exported WhatsApp chats in a beautiful, dark UI. Filter by sender, group by date, and enjoy a smooth experience.",
