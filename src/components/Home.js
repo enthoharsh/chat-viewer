@@ -1,5 +1,6 @@
 "use client"
 
+import Script from "next/script";
 import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
@@ -87,7 +88,17 @@ export default function Home() {
   To use this tool, first export your chat from WhatsApp and upload the .txt file here.<br />
   <span className="text-xs ">Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file</span>
 </div>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3554718393816462"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3554718393816462"
+     data-ad-slot="2523183959"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       <div className="min-h-screen flex flex-col px-4 py-6 max-w-5xl mx-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-3xl font-bold">📱 WhatsApp Chat Viewer</h2>
