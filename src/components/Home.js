@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Script from "next/script";
 import { useEffect, useState, useRef } from "react";
@@ -77,40 +77,28 @@ export default function Home() {
   const groupedChats = groupByDate(filteredChats);
 
   return (
-    <div
-      className={
-        darkMode ? "dark bg-gray-900 text-white" : "bg-blue-50 text-black"
-      }
-    >
-      <div className="mb-6 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center text-sm  shadow-md">
-      <h1>WhatsApp Chat Viewer - View, Filter & Analyze Your Chats Online</h1>
-  📂 <strong>Please upload your exported WhatsApp chat (.txt file)</strong><br />
-  To use this tool, first export your chat from WhatsApp and upload the .txt file here.<br />
-  <span className="text-xs ">Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file</span>
-</div>
-<Script
+    <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-blue-50 text-black"}>
+      <Script
         async
         strategy="afterInteractive"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3554718393816462"
         crossOrigin="anonymous"
       />
+      <Script id="adsbygoogle-init" strategy="afterInteractive">
+        {(adsbygoogle = window.adsbygoogle || []).push({})}
+      </Script>
 
-      {/* Ad Container */}
-      <div style={{ margin: "20px 0" }}>
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client="ca-pub-3554718393816462"
-          data-ad-slot="2523183959"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        ></ins>
+      <div className="mb-6 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center text-sm shadow-md">
+        <h1>WhatsApp Chat Viewer - View, Filter & Analyze Your Chats Online</h1>
+        📂 <strong>Please upload your exported WhatsApp chat (.txt file)</strong>
+        <br />
+        To use this tool, first export your chat from WhatsApp and upload the .txt file here.
+        <br />
+        <span className="text-xs ">
+          Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file
+        </span>
       </div>
 
-      {/* Push adsbygoogle */}
-      <Script id="adsbygoogle-init" strategy="afterInteractive">
-        {`(adsbygoogle = window.adsbygoogle || []).push({});`}
-      </Script>
       <div className="min-h-screen flex flex-col px-4 py-6 max-w-5xl mx-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-3xl font-bold">📱 WhatsApp Chat Viewer</h2>
@@ -175,7 +163,7 @@ export default function Home() {
 
         <div
           ref={chatContainerRef}
-          className={`rounded-lg p-4 shadow-inner dark:shadow-none h-[70vh] overflow-y-auto space-y-6 transition-colors duration-300`}
+          className="rounded-lg p-4 shadow-inner dark:shadow-none h-[70vh] overflow-y-auto space-y-6 transition-colors duration-300"
         >
           {Object.entries(groupedChats).map(([date, msgs], index) => (
             <div key={index}>
@@ -211,22 +199,33 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <div style={{ margin: "20px 0" }}>
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client="ca-pub-3554718393816462"
+            data-ad-slot="2523183959"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        </div>
       </div>
 
-    <footer className="backdrop-blur-md bg-white/10 text-gray-300 text-sm py-4 w-full mt-2">
-      <div className="max-w-4xl mx-auto px-4 text-center text-black">
-        Tool with ❤️ by{" "}
-        <a
-          href="https://github.com/enthoharsh"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:underline"
-        >
-          Harsh
-        </a>{" "}
-        | © {new Date().getFullYear()}
-      </div>
-    </footer>
+      <footer className="backdrop-blur-md bg-white/10 text-gray-300 text-sm py-4 w-full mt-2">
+        <div className="max-w-4xl mx-auto px-4 text-center text-black dark:text-white">
+          Tool with ❤️ by{" "}
+          <a
+            href="https://github.com/enthoharsh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            Harsh
+          </a>{" "}
+          | © {new Date().getFullYear()}
+        </div>
+      </footer>
     </div>
   );
 }
