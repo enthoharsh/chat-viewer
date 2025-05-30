@@ -94,7 +94,7 @@ export default function Home() {
         <br />
         To use this tool, first export your chat from WhatsApp and upload the .txt file here.
         <br />
-        <span className="text-xs ">
+        <span className="text-xs">
           Go to WhatsApp {'>'} Chat {'>'} Export Chat {'>'} Without Media {'>'} Save as .txt file
         </span>
       </div>
