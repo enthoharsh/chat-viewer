@@ -22,14 +22,14 @@ export default function Home() {
     const lines = text.split("\n");
 
     const parsedChats = [];
-    const regex = /^(\d{1,2}\/\d{1,2}\/\d{2,4}),\s(\d{1,2}:\d{2})\s?(?:AM|PM|am|pm|[ ]?[ap]m)?\s?-\s([^:]+):\s(.+)$/i;
+    const regex = /^(\d{1,2}\/\d{1,2}\/\d{2,4}),\s(\d{1,2}:\d{2})\s?(?:AM|PM|am|pm)?\s?-\s([^:]+):\s(.+)$/;
 
     lines.forEach((line) => {
       const match = line.match(regex);
       if (match) {
         const [_, date, time, sender, message] = match;
         parsedChats.push({ date, time, sender, message });
-      } else if (parsedChats.length) {
+      } else if (parsedChats.length > 0) {
         parsedChats[parsedChats.length - 1].message += "\n" + line;
       }
     });
@@ -55,14 +55,10 @@ export default function Home() {
 
   useEffect(() => {
     const filtered = chats.filter((chat) => {
-      const matchSender =
-        selectedSender === "All" || chat.sender === selectedSender;
-      const matchSearch =
-        searchTerm === "" ||
-        chat.message.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchSender = selectedSender === "All" || chat.sender === selectedSender;
+      const matchSearch = searchTerm === "" || chat.message.toLowerCase().includes(searchTerm.toLowerCase());
       return matchSender && matchSearch;
     });
-
     setFilteredChats(filtered);
   }, [searchTerm, selectedSender, chats]);
 
@@ -174,9 +170,7 @@ export default function Home() {
                 {msgs.map((chat, idx) => (
                   <div
                     key={idx}
-                    className={`flex ${
-                      chat.sender === mainUser ? "justify-end" : "justify-start"
-                    }`}
+                    className={`flex ${chat.sender === mainUser ? "justify-end" : "justify-start"}`}
                   >
                     <div
                       className={`rounded-2xl p-4 max-w-[75%] shadow-md whitespace-pre-line text-sm ${
@@ -186,9 +180,7 @@ export default function Home() {
                       }`}
                     >
                       <div className="font-semibold text-xs opacity-80 mb-1">
-                        {chat.sender === mainUser
-                          ? `(${chat.sender})`
-                          : chat.sender}
+                        {chat.sender === mainUser ? "(You)" : chat.sender}
                       </div>
                       <div>{chat.message}</div>
                       <div className="text-xs opacity-60 mt-1">{chat.time}</div>
