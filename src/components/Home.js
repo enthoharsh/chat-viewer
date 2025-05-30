@@ -14,6 +14,14 @@ export default function Home() {
   const [showSenderPopup, setShowSenderPopup] = useState(false);
   const chatContainerRef = useRef(null);
 
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      // ignore errors here
+    }
+  }, []);
+
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -80,9 +88,6 @@ export default function Home() {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3554718393816462"
         crossOrigin="anonymous"
       />
-      <Script id="adsbygoogle-init" strategy="afterInteractive">
-        {(adsbygoogle = window.adsbygoogle || []).push({})}
-      </Script>
 
       <div className="mb-6 p-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 text-center text-sm shadow-md">
         <h1>WhatsApp Chat Viewer - View, Filter & Analyze Your Chats Online</h1>
